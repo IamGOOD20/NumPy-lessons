@@ -1,0 +1,27 @@
+- ÑÓÙÅÑÒÂÓŞÙÈÅ ÒÈÏÛ ÄÀÍÍÛÕ
+	np.sctypeDict - âñå òèïû ïîääåğæèâàåìûåõ äàííûõ 
+
+- ÓÊÀÇÀÍÈÅ ÒÈÏÀ ÄÀÍÍÛÕ
+	>>>b = np.array([1, 2, 3], 'str_') # âòîğûì àğãóìåíòîì óêàçûâàåòñÿ òèï äàííûõ 
+	>>>b
+	array(['1', '2', '3'], dtype='<U1')
+
+- ÏĞÅÎÁĞÀÇÎÂÀÍÈÅ ÎÁÜÅÊÒÀ 
+	>>>np.complex64(10)
+	(10+0j)
+	>>>np.int16(10.5)
+	10
+	>>>np.str_(10)
+	'10'
+
+- ÏĞÅÎÁĞÀÇÎÂÀÍÈÅ ÌÀÑÑÈÂÀ
+	>>>a = np.array([1, 100, 1000, 5000])
+	>>>np.complex64(a)
+	array([1.e+00+0.j, 1.e+02+0.j, 1.e+03+0.j, 5.e+03+0.j], dtype=complex64) # ÊÎÏÈß ÌÀÑÑÈÂÀ, ÎĞÈÃÈÍÀË ÍÅ ÇÀÒĞÎÍÓÒ
+	
+	>>>b = np.complex64(a)
+	>>>c = np.int32(b)
+	<input>:1: ComplexWarning: Casting complex values to real discards the imaginary part
+	>>>c
+	array([   1,  100, 1000, 5000])
+		
