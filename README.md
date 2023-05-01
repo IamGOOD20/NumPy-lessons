@@ -1,1 +1,1 @@
-# wtf-
+# NumPy lessons
